@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--comienzo poniendo el nombre de nuestra floreria ficticia-->
+
+     <title>Mikrokosmos</title> 
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <header>
+<!--ahora asigno un menu del contenido de esta web-->
+
+        <div class="container">
+         <p class="logo">Mikrokosmos Store</p>
+         <nav>
+         <a href="#inicio">inicio</a>
+         <a href="#Catálogo">Catálogo</a>
+         <a href="#caracteristicas">Ofrecemos</a>
+         </nav>
+        </div>
+    </header>
+ <!--seguido una breve introduccion con una frase llamativa--> 
+
+    <section id="hero">
+       <h1>La Belleza Efímera <br>Recuerdos Eternos</h1>
+       <button> Pedidos Aquí </button>
+    </section>
+<!--ahora pondre una breve descripcion del negocio-->
+
+    <section id="inicio">
+       <div class="container">
+            <div class="img-container"></div>
+            <div class="texto">
+
+              <h2>Somos <span class="color-acento">Mikrokosmos</span> Store</h2>
+              <p>Leben das ist die Wärme des Wassers in meinem Bad Leben das
+                 ist mein Mund an deinem offenen Schoß. Leben das ist der Zorn
+                 auf das Unrecht in unseren Ländern. Die Wärme des Wassers genügt
+                 nicht ich muss auch darin Plätschern.Mein Mund an deinem Schoß 
+                 genügt nicht auch muss ihn auch küssen. Der Zorn auf das Unrecht
+              </p>
+            </div>
+       </div>
+    </section>
+ <!--siguiente pongo los productos que ofrecemos y detalles de los mismos-->   
+    <section id="Catálogo">
+        <div class="container">
+          <h2>Nuestros Productos</h2>
+          <div class="productos">
+              <div class="carta">
+                 <h3>Ramos clasicos</h3>
+                 <p>Der Purpur: eine mysteriöse und kreative Farbe, die Luxus, Spiritualität 
+                 und Weisheit hervorruft. Ein reicher und anspruchsvoller Ton, der die 
+                 Fantasie und den künstlerischen Ausdruck inspiriert</p>
+                 <button> more info </button>
+             </div>
+             <div class="carta">
+                 <h3>Ramos grandes</h3>
+                 <p>lirios:Pureza, inocencia, paz y refinamiento. También se asocian con
+                 la realeza y la nobleza. En algunos contextos, representan la virginidad y 
+                 la castidad. En general, los lirios son considerados un símbolo de 
+                 elegancia y belleza.</p>
+                 <button> more info </button>
+             </div>
+             <div class="carta">
+                 <h3>Arreglos para eventos</h3>
+                 <p>Belleza exótica, elegancia, refinamiento y sofisticación. También
+                 se asocian con la pasión, el amor y la fertilidad. En algunas culturas,
+                 representan la rareza y la exclusividad. En general, las orquídeas son 
+                 consideradas un símbolo de belleza única y fascinante.</p>
+                 <button> more info </button>
+             </div>
+          </div>
+        </div>
+    </section>
+
+<!--escribire unas partes importantespara ofrecer confianza al cliente-->
+    <section id="caracteristicas">
+       <div class="container">
+           <ul>
+               <h2>Ofrecemos:</h2>
+               <li>⚜︎ Flores frescas y en buen estado</li>
+               <li>⚜︎ Diseños unicos y personalizados</li>
+               <li>⚜︎ Entrega rapida y confiable</li>  
+           </ul>
+       </div>  
+    </section>
+
+    <section id="pedidos">
+        <h2>Sé parte de nosotros</h2>
+        <label form="text">Nombres:</label>
+        <input class="controls" type="text" name="nombres" id="nombres" placeholder="ingresar nombre">
+        <label form="email">Correo:</label>
+        <input class="controls" type="email" name="correo" id="correo" placeholder="ingresar correo">
+        <label form="number">Numero de telefono:</label>
+        <input class="controls"  type="number" name="numero" id="numero" placeholder="ingresar numero de telefono">
+        <label form="text">solicite mas informacion:</label>
+        <textarea name="masinfo" rows="5" cols="50" placeholder="solicitar mas informacion"></textarea>
+        <p><input type="checkbox" class="required"> de acuerdo con <a href="https://policies.google.com/privacy?hl=es">Terminos y condiciones</a></p>
+        <input class="button" type="submit" value="registrar">
+    </section>
+
+<!--ahora ponemos un footer donde el cliente encuentrará las redes sociales-->  
+    <footer>
+        <div class="container">
+         <p>&copy; Mikrokosmos 2025</p>
+          <ul class="social-icons">
+             <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+             <li><a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+             <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+             <li><a href="mailto:clilly451simuliu@gmail.com"><i class="fas fa-envelope"></i></a></li>
+          </ul>
+        </div>       
+    </footer>
+</body>
+</html>

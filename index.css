@@ -1,0 +1,354 @@
+*{ 
+/*este codigo es para evitar que se cambie el tamaño asignado*/
+  box-sizing: border-box;
+  margin: 0;
+}
+/*aqui estara el estilo de la fuente*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family:'Playfair Display', papyrus;
+  font-style: italic;
+  margin: 0;
+}
+
+/*aqui coloco los tamaños de los titulos y otros para que se distingan visualmente*/
+
+h1 { font-size: 3.5em; }
+h2 { font-size: 2.7em; }
+h3 { font-size: 2em; }
+p { font-size: 1.25em; }
+ul { list-style: none; }
+li { font-size: 1.25em; }
+
+button {
+    font-size: 1.50em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid goldenrod;
+    box-shadow: 3px 3px 11px goldenrod ;
+    color: black ;
+    background-color: orchid;
+}
+
+button:hover {
+    background-color: blueviolet;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.color-acento{ color: darkorchid;}
+
+header {
+    background-color: rgb(207, 125, 207) ;
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 40px;
+    font-weight: bold;
+    color: black;
+    font-size: 1.50em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rebeccapurple;
+}
+
+header a:hover {
+    color: purple;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+         0deg,
+         rgba(0,0,0,0.5),
+         rgba(0,0,0,0.5)
+
+    )
+    ,url(image/cherryblossom10.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1 {
+    color: beige;
+}
+
+#inicio .container {
+     text-align: center;
+     padding: 200px 12px;        
+}
+
+#Catálogo .container {
+     background-color:rgb(211, 56, 211);
+     color: rgb(211, 211, 119);
+     text-align: center;
+}
+
+#Catálogo .container {
+     padding: 100px 0px;
+}
+
+#Catálogo h2 {
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#Catálogo p {
+    display: none;
+}
+
+#Catálogo .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    box-shadow: 15px 15px 20px rgb(128, 0, 81);
+}
+
+.carta:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("image/ramoN2.jfif")
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("image/lirium.jfif")
+}
+
+.carta:nth-child(3) {
+     background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(image/arreglodboda.webp)
+}
+
+#caracteristicas .container {
+    text-align: center;
+    padding: 250px 12px;
+}
+
+#caracteristicas li {
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: white;
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: darkorchid;
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px){
+    header {
+       position: fixed;
+       width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1 {
+        font-size: 5em;
+    }
+
+
+#inicio .container {
+      display: flex;
+      justify-content: space-evenly;
+}
+
+#inicio .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#inicio h2 {
+    margin-top: 0px;
+}
+
+#inicio .img-container {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    ),url("image/taetaeuwu.jfif");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+}
+
+#Catálogo .productos {
+     display: flex;
+     justify-content: center;
+}
+
+#Catálogo p{
+    display: block;
+    margin-bottom: 30px;
+}
+
+#Catálogo h3 {
+    margin-top: 0;
+}
+
+#Catálogo .carta{
+    padding: 50px;
+}
+
+#caracteristicas {
+    background-image: url("image/niñaFLOR.avif");
+    background-repeat: no-repeat;
+    background-size: 500px 400px;
+    background-position: calc(100vw - 400px) 120px;
+}
+
+#caracteristicas .container {
+    text-align: initial;
+}
+
+#caracteristicas ul {
+    margin-left: 100px;
+}
+
+}
+
+@media (min-width: 1100px) {
+    #caracteristicas {
+        background-position-x: calc(100vw - 700px);
+    }
+}
+
+#pedidos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:rgb(178, 73, 231);
+    color: rgb(243, 194, 130);
+    height: 80vh;
+}
+
+#pedidos h2 {
+    font-size: 9vw;
+}
+
+#pedidos label{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#pedidos input {
+    height: 40px;
+}
+
+.controls {
+    border-radius: 7px;
+    border: 2px solid goldenrod;
+    box-shadow: 3px 3px 11px goldenrod;
+    background-color: lightpink;
+}
+
+ textarea {
+    border-radius: 7px;
+    border: 2px solid goldenrod;
+    box-shadow: 3px 3px 11px goldenrod;
+    background-color: lightpink;
+ }
+
+input[type="submit"] {
+    margin-bottom: 10px;
+    border-radius: 7px;
+    border: 2px solid goldenrod;
+    box-shadow: 3px 3px 11px goldenrod;
+    background-color: lightpink;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  padding-right: 10px;
+}
+
+.social-icon {
+  margin: 10px;
+  font-size: 24px; 
+  color: #971897; 
+}
+
+.social-icon:hover {
+  color: #440637;  
+}
+    
